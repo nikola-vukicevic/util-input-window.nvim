@@ -1,4 +1,4 @@
-A simple pluign for starting an input window when vim.ui.input is called.
+A simple pluign for starting an input window when `vim.ui.input` is called.
 
 ![Apr28::182842](https://github.com/user-attachments/assets/d69daced-5135-4260-8d98-d68c085ba252)
 
