@@ -12,10 +12,10 @@ local Config = {
 
 	def_opts = {
 		-- title     = 'Rename: ',
-		relative  = 'editor',
-		row       = vim.o.lines / 2 - 1,
-		col       = vim.o.columns / 2 - 25,
-		width     = 90,
+		relative  = 'cursor',
+		row       = -3,
+		col       = -1,
+		width     = 0,
 		height    = 1,
 		focusable = true,
 		style     = 'minimal',
