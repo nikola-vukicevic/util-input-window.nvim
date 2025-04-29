@@ -7,7 +7,7 @@ local Config = {
 	defer_timer_1 = 10,
 	defer_timer_2 = 5,
 	right_margin  = 5,
-	default_width = 54,
+	max_width     = 54,
 	quit_key      = "q",
 
 	def_opts = {
@@ -70,7 +70,7 @@ M.input = function(opts, on_confirm, win_opts)
 
 	local proposed_width = #default_text + #prompt + Config.right_margin
 
-    win_opts.width = proposed_width > Config.default_width and Config.default_width or proposed_width
+    win_opts.width = proposed_width > Config.max_width and Config.max_width or proposed_width
 
 	local win = vim.api.nvim_open_win(Config.aux_buffer, true, win_opts)
 	vim.api.nvim_win_set_option(win, "winhighlight", "Search:None")
